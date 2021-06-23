@@ -1,0 +1,7 @@
+{
+  "name": "mock_project_setup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
