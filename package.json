@@ -19,7 +19,9 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
     "ionicons": "^5.4.0",
+    "postcss-cli": "^8.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
@@ -41,7 +43,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/style.css",
+    "start": "npm run build:css && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -65,7 +68,10 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.0.2"
+    "@capacitor/cli": "3.0.2",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   },
   "description": "An Ionic project"
 }
