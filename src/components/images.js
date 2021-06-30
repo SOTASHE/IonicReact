@@ -17,7 +17,7 @@ export default function Images(){
        inputRef.current.focus()
 
        axios.get(
-        "https://jsonplaceholder.typicode.com/photos", {params:{_limit:5}}
+        "https://jsonplaceholder.typicode.com/photos", {params:{_limit:9}}
 
 
        ).then(res =>{
